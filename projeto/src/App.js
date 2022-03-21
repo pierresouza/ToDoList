@@ -22,7 +22,7 @@ function App() {
             {lista.map((item,index) => (
                <li key={index}  className="todo-item">
                   {item}
-                  <button onClick={() => deletearItem(index)}>
+                  <button onClick={() => deletarItem(index)}>
                   Deletar   
                   </button>
                   </li>
@@ -48,7 +48,7 @@ function App() {
       setNovoItem("");
    }
 
-   function deletearItem(index){
+   function deletarItem(index){
       let tmpArray = [...lista];
       tmpArray.splice(index, 1);
 
